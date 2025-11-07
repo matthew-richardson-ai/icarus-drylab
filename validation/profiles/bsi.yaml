@@ -1,0 +1,26 @@
+name: bsi_v0
+concentrations: [0.001, 0.003, 0.01, 0.03, 0.1, 0.3, 1.0]   # relative
+temperatures_C: [35, 36, 37]
+replicates_per_cell: 10
+classes:
+  - label: NEGATIVE
+    kin: {k_on: 3.0e-4, k_off: 8.0e-4}   # skin flora / background
+    prior: 0.5
+  - label: SAUR_ECOLI
+    kin: {k_on: 2.0e-3, k_off: 5.0e-4}   # higher affinity
+    prior: 0.5
+noise:
+  gaussian_sigma_base: 0.012
+  one_over_f_strength: 0.006
+  spike_probability: 0.01
+drift:
+  ar1_rho: 0.995
+  ar1_sigma: 1.0e-4
+electronics:
+  adc_bits: 12
+  vmin: -1.0
+  vmax: 1.0
+  lowpass_alpha: 0.6
+eval:
+  lod_target_tpr: 0.95
+  lod_fpr_at: 0.05

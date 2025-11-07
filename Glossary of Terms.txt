@@ -1,0 +1,41 @@
+Glossary (abbreviations & symbols)
+
+AI – Artificial Intelligence.
+
+ML – Machine Learning.
+
+IP – Intellectual Property.
+
+LoD – Limit of Detection: the lowest concentration of analyte (target molecule) you can detect with a specified success rate.
+
+SNR – Signal‑to‑Noise Ratio.
+
+ADC – Analog‑to‑Digital Converter: electronics that turn analog signals into digital numbers.
+
+AR(1) – Autoregressive (order 1) process: a simple time‑series model where the present value depends on the previous value plus noise.
+
+FFT – Fast Fourier Transform: converts time‑domain signals to frequency domain.
+
+CNN – Convolutional Neural Network.
+
+TCN – Temporal Convolutional Network.
+
+ROC – Receiver Operating Characteristic curve (true positive rate vs false positive rate).
+
+PR curve – Precision‑Recall curve.
+
+CI – Confidence Interval.
+
+DOE – Design of Experiments: a plan for systematically varying conditions to probe performance.
+
+k_on, k_off – Binding kinetics constants; association (on‑rate) and dissociation (off‑rate) measured in appropriate units (e.g., M⁻¹·s⁻¹ and s⁻¹).
+
+θ (theta) – Fraction of sensor binding sites that are occupied (dimensionless, 0–1).
+
+C – Analyte concentration (e.g., colony‑forming units per milliliter, CFU/mL, or molarity).
+
+S – Sensor signal (arbitrary units mapped by the sensor/electronics).
+
+TFLite – TensorFlow Lite: a format for running neural networks on embedded devices.
+
+ONNX – Open Neural Network Exchange: a common format for ML models.

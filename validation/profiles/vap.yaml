@@ -1,0 +1,29 @@
+name: vap_v0
+concentrations: [0.001, 0.002, 0.005, 0.01, 0.03, 0.1, 0.3]
+temperatures_C: [20, 25, 30]
+replicates_per_cell: 12
+classes:
+  - label: NEGATIVE_OR_COLONIZER
+    kin: {k_on: 2.5e-4, k_off: 9.0e-4}
+    prior: 0.6
+  - label: PATHOGEN_MIX
+    kin: {k_on: 1.8e-3, k_off: 6.0e-4}
+    prior: 0.4
+noise:
+  gaussian_sigma_base: 0.015
+  one_over_f_strength: 0.008
+  spike_probability: 0.015
+drift:
+  ar1_rho: 0.993
+  ar1_sigma: 2.0e-4
+electronics:
+  adc_bits: 12
+  vmin: -1.0
+  vmax: 1.0
+  lowpass_alpha: 0.55
+eval:
+  lod_target_tpr: 0.95
+  lod_fpr_at: 0.05
+  stress:
+    temperature_shift: true
+    saturation_clip: true
